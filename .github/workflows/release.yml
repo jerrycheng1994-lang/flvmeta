@@ -57,7 +57,7 @@ jobs:
         prerelease: false
         make_latest: true
         files: |
-          ${{ runner.workspace }}/build/src/flvmeta.exe
+          ${{ runner.workspace }}/build/src/Release/flvmeta.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
