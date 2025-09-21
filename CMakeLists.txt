@@ -3,6 +3,9 @@ project(flvmeta C)
 
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
 
+# use static library to run in apline or other docker images
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+
 set(FLVMETA_VERSION "1.2.2")
 set(FLVMETA_RELEASE yes)
 
